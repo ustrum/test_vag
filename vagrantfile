@@ -11,12 +11,12 @@ Vagrant.configure(2) do |config|
   end
   
   config.vm.define "srv1" do |srv|
-    srv.vm.hostname = "pmr_srv1.test"
+    srv.vm.hostname = "pmr-srv1.test"
     srv.vm.network :private_network, ip: "192.168.89.201"
   end
   
   config.vm.define "srv2" do |srv|
-    srv.vm.hostname = "pmr_srv2.test"
+    srv.vm.hostname = "pmr-srv2.test"
     srv.vm.network :private_network, ip: "192.168.89.202"
   end
 end
